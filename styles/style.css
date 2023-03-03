@@ -1,0 +1,175 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff;
+
+  background-image: url("/src/images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.order-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  height: 697px;
+  width: 450px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.product img {
+  width: 450px;
+  height: 220px;
+  border-radius: 20px 20px 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    height: 567px;
+    width: 327px;
+  }
+
+  .product img {
+    width: 327px;
+    height: 160px;
+  }
+}
+
+.order-details {
+  margin: 45px 48px 20px 48px;
+}
+
+@media only screen and (max-width: 600px) {
+  .order-details {
+    margin: 32px 32px 24px 32px;
+  }
+}
+
+.order-heading {
+  margin-bottom: 17px;
+  text-align: center;
+  color: rgba(31, 46, 85, 1);
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: 900;
+}
+
+.order-descr {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(113, 127, 166, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  .order-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .order-descr {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+/* Order Plans */
+.order-plans {
+  height: 98px;
+  border-radius: 11px;
+  margin: 0 48px 32px 48px;
+  background-color: rgba(247, 249, 255, 1);
+  display: flex;
+  align-items: center;
+}
+
+.order-plans img {
+  width: 48px;
+  height: 48px;
+  margin: 0 20px 0 24px;
+}
+
+.current-plan-title {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 21.17px;
+  color: rgba(31, 46, 85, 1);
+  margin-bottom: 6px;
+}
+
+.current-plan-price {
+  font-size: 16px;
+  line-height: 21.17px;
+  color: rgba(113, 127, 166, 1);
+}
+
+.change-plan-button {
+  margin-left: auto;
+  margin-right: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.52px;
+  color: rgba(56, 42, 225, 1);
+}
+.change-plan-button:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .order-plans {
+    margin: 0 24px 24px 24px;
+  }
+
+  .current-plan-title,
+  .current-plan-price {
+    font-size: 14px;
+    line-height: 18.52px;
+  }
+
+  .change-plan-button {
+    font-size: 13px;
+    line-height: 17.2px;
+  }
+}
+
+/*  */
+.process-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  margin: 0 48px 32px 48px;
+  border-radius: 11px;
+  background-color: #382ae1;
+  color: white;
+  box-shadow: 0px 20px 20px 0px #382ae131;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  .process-button {
+    margin: 0 24px 24px 24px;
+  }
+}
+
+.process-button:hover {
+  background-color: #766cf1;
+}
+
+.cancel-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+  color: #717fa6;
+}
+
+.cancel-button:hover {
+  color: #1f2e55;
+}
